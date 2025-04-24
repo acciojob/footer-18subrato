@@ -1,1 +1,79 @@
-/* your code here */
+.footer {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer-section a {
+  display: block;
+  color: #bbb;
+  text-decoration: none;
+  margin: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+}
+
+.media-icons {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.3s;
+}
+
+.media-icons:hover {
+  transform: scale(1.1);
+}
+
+/* Sample icons — replace with real SVGs or icon fonts */
+.facebook { background-image: url('https://cdn-icons-png.flaticon.com/512/733/733547.png'); }
+.twitter { background-image: url('https://cdn-icons-png.flaticon.com/512/733/733579.png'); }
+.instagram { background-image: url('https://cdn-icons-png.flaticon.com/512/733/733558.png'); }
+.linkedin { background-image: url('https://cdn-icons-png.flaticon.com/512/733/733561.png'); }
+.youtube { background-image: url('https://cdn-icons-png.flaticon.com/512/733/733646.png'); }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .media-icons {
+    margin: 10px 5px;
+  }
+}
