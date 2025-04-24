@@ -24,7 +24,7 @@
 }
 
 .footer-section a {
-  display: block;
+  display: flex;
   color: #bbb;
   text-decoration: none;
   margin: 5px 0;
